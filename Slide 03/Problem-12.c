@@ -1,10 +1,6 @@
-/*
-Write a C program that takes a character as input and determines whether it is a vowel or consonant or other symbols.
-For more clarification, check sample input/output.
- */
+/* Given a character as input, identify the character as alphabet, number or others.
 
-// Symbol (32 -47) (58 - 64) (123 - 255)ASCII value
-
+For more clarification, check sample input/output. */
 #include <stdio.h>
 int main()
 {
