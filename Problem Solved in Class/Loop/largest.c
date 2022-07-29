@@ -2,6 +2,7 @@
 #include <limits.h>
 int main()
 {
+    // INT_MIN is the minimum Value of a Integer
     int i, amountOfNumber, maximum = INT_MIN, Input;
     printf("Enter the amount How many numbers you want to average : \n");
     scanf("%d", &amountOfNumber);
