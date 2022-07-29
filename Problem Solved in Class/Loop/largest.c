@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
 int main()
 {
-    int i, amountOfNumber, maximum = 0, Input;
+    int i, amountOfNumber, maximum = INT_MIN, Input;
     printf("Enter the amount How many numbers you want to average : \n");
     scanf("%d", &amountOfNumber);
     for (i = 1; i <= amountOfNumber; i++)
