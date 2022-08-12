@@ -20,6 +20,6 @@ int main()
 int qube(int input)
 {
     int ans;
-    ans = cbrt(input);
+    ans = input * input * input;
     return ans;
 }
