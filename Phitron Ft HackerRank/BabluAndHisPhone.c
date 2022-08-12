@@ -1,29 +1,26 @@
 #include <stdio.h>
 int main()
 {
-    int T, X, i, M;
+    int Time, Perchantage, i, attempt;
 
-    scanf("%d", &T);
-    for (i = 1; i <= T; i++)
+    scanf("%d", &attempt);
+    for (i = 1; i <= attempt; i++)
     {
-        scanf("%d", &X);
-        if (X < 60)
+        scanf("%d", &Perchantage);
+        if (Perchantage < 60)
         {
-            M = 60 - X;
-            X = M + X;
-            if (X >= 60 && X < 80)
-            {
-                M = M + ((80 - X) * 2); // M = 65
-                X = M + (M - X);        // 80 আসা উচিত
-
-                if (X >= 80 && X < 100)
-                {
-                    M = M + ((80 - X) * 2);
-                }
-            }
+            Time = (20 * 3) + (20 * 2) + (60 - Perchantage);
         }
+        else if (Perchantage > 60 && Perchantage < 80)
+        {
+            Time = (20 * 3) + ((80 - Perchantage) * 2);
+        }
+        else if (Perchantage > 80 && Perchantage < 100)
+        {
+            Time = (100 - Perchantage) * 3;
+        }
+        printf("%d minutes\n", Time);
     }
-    printf("%d", M);
 
     return 0;
 }
